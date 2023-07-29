@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: 1rem;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.main .title{
+    color: white;
+    font-size: 43px;
+}
+
+body{
+    background-image: url(../assets/img/bgImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000c7;
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+}
+.container .add input{
+    padding: 10px 12px;
+    width: 27%;
+    margin-top: 2rem;
+    margin-bottom: 5px;
+    background-color: #00000033;
+    color: white;
+    font-size: 19px;
+    border-radius: 10px;
+    border: 3px solid rgb(19, 19, 101);
+    border-radius: 20px;
+
+}
+.container .add i{
+    cursor: pointer;
+    border: 2px solid rgb(19, 19, 101);
+    background-color: rgb(20, 17, 90);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.container #msgBox{
+    color: red;
+    display: none;
+}
+.lists ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lists ul li{
+    /* display: inline-block; */
+    list-style: none;
+    border: 3px solid #161e60;
+    word-wrap: break-word;
+    width: 30%;
+    background: black;
+    color: coral;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px 1rem;
+    font-size: 20px;
+    text-align: left;
+}
+
+.lists .icons{
+    float: right;
+}
+
+.lists ul li  i{
+    cursor: pointer;
+    border: 2px solid rgb(19, 19, 101);
+    background-color: rgb(20, 17, 90);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.done{
+    color: rgb(169, 21, 137);
+    text-decoration: line-through 1px rgb(255, 255, 255);
+}
+
+.doneTsk::before{
+    content: "✔";
+    
+}
+
+@media screen and (max-width: 630px) {
+    .container .add input{
+        width: 75%;
+    }
+    .lists ul li{
+        width: 85%;
+        margin: auto;
+
+    }
+    .lists ul{
+        display: unset;
+    }
+    .lists{
+        margin-top: 1rem;
+    }
+}
