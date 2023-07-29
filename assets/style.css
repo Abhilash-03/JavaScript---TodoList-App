@@ -108,7 +108,7 @@ body{
     .lists ul li{
         width: 85%;
         margin: auto;
-
+        margin: 10px;
     }
     .lists ul{
         display: unset;
