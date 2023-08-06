@@ -1,10 +1,13 @@
+// ****TODO LIST WITHOUT LOCALSTORAGE******
+
+
 let input = document.getElementById('inp');
 let addBtn = document.getElementById('addVal');
 let lists = document.getElementById('ul');
 
 let listArray = [];
 
-
+// Adding todo list
 addBtn.addEventListener('click', ()=>{
     let listValue = input.value;
     let task = {
@@ -25,7 +28,7 @@ addBtn.addEventListener('click', ()=>{
         input.value = '';   
 })
 
-// All the Todo lists are showing
+// Showing all the todo lists.
 const showTodoLists = ()=>{
     let displayList = '';
     listArray.forEach((task, index)=>{
