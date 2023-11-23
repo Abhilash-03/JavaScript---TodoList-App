@@ -47,7 +47,9 @@ const showTodoLists = () => {
   todoArr.forEach((task, index) => {
     if (!task.check) {
       displayList += `<li class="list-item">
+      <span class="left-side">
           <span  id="task-${index}" onclick = "done(${index})">${task.todo}</span>
+          </span>
           <div class = 'icons'>
           <i class="fa-solid fa-pen-to-square" onclick="edit(${index})"></i>
           <i class="fa-solid fa-trash" onclick="deleteList(${index})"></i>
@@ -57,9 +59,10 @@ const showTodoLists = () => {
           `;
     } else {
       displayList += `<li class="list-item" id="li-${index}">
+          <span class="left-side">
              <span  id="task-${index}" onclick = "done(${index})" class='done'>${task.todo}</span>
              <small class="doneTsk"></small>
-         
+             </span>
              <div class = 'icons'>
              <i class="fa-solid fa-pen-to-square" onclick="edit(${index})"></i>
              <i class="fa-solid fa-trash" onclick="deleteList(${index})"></i>
